@@ -1,0 +1,7 @@
+name: Ueberbiber
+main: com.stroebitzer.minecraft.ueberbiber.Plugin
+api-version: 1.18
+version: 1.0
+commands:
+  dragon:
+  firework:
