@@ -15,7 +15,7 @@ public class FireworkCommandExecutor implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        Bukkit.getLogger().info("(ERIK PLUGIN) Spawning a firework");        
+        Bukkit.getLogger().info("(UEBERBIBER PLUGIN) Spawning a firework");        
         if (sender instanceof Player) {
             Player player = (Player) sender;
             Location location = player.getLocation();
