@@ -24,3 +24,11 @@ ssh stroebitzers@loki
 gradlew.bat build
 scp build/libs/plugin.jar stroebitzers@loki:Schreibtisch/minecraft/plugins
 
+# git
+VSC git extension pack
+git http://git-scm/download/win
+git bash as standard terminal
+in git terminal git clone plugin and resourcepack
+git config --global user.name "your_username"
+git config --global user.email "your_email_address@example.com"
+git credentials via doing first push
