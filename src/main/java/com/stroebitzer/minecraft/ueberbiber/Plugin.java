@@ -12,6 +12,7 @@ public final class Plugin extends JavaPlugin {
         this.getCommand("buildinghelp").setExecutor(new BuildingHelpCommandExecutor());
         this.getCommand("Goldenrabbit").setExecutor(new RabbitCommandExecutor());
         this.getCommand("Golem").setExecutor(new GolemCommandExecutor());
+        this.getCommand("WaterMLG").setExecutor(new WaterMLGCommandExecutor());
     }   
 
 }
