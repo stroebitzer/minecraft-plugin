@@ -8,6 +8,7 @@ public final class Plugin extends JavaPlugin {
         this.getLogger().info("(UEBERBIBER PLUGIN) Ueberbiber Plugin Enabled");
         this.getCommand("dragon").setExecutor(new DragonCommandExecutor());
         this.getCommand("firework").setExecutor(new FireworkCommandExecutor());
+        this.getCommand("snowballfight").setExecutor(new SnowballFightCommandExecutor());
     }
 
 }
