@@ -19,7 +19,7 @@ public class GolemCommandExecutor implements CommandExecutor {
             Player player = (Player) sender;
             Location location = player.getLocation();
             IronGolem golem = player.getWorld().spawn(location, IronGolem.class);
-            golem.setHealth(1000);
+            golem.setHealth(100);
             golem.setCustomName("Hansi Der Hinterseer");
         }
         return true;
