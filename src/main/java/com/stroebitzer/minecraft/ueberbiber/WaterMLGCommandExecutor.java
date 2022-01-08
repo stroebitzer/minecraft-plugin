@@ -17,7 +17,7 @@ public class WaterMLGCommandExecutor implements CommandExecutor {
             Player player = (Player) sender;
             Location location = player.getLocation();
             location.setY(location.getY()-2);
-            location.getBlock().setType(Material.WATER_BUCKET);
+            location.getBlock().setType(Material.WATER);
         }
         return true;
     }
