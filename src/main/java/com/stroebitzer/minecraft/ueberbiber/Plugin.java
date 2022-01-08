@@ -10,6 +10,7 @@ public final class Plugin extends JavaPlugin {
         this.getCommand("firework").setExecutor(new FireworkCommandExecutor());
         this.getCommand("snowballfight").setExecutor(new SnowballFightCommandExecutor());
         this.getCommand("buildinghelp").setExecutor(new BuildingHelpCommandExecutor());
-    }
+        this.getCommand("Goldenrabbit").setExecutor(new RabbitCommandExecutor());
+    }   
 
 }
