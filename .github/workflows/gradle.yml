@@ -45,4 +45,4 @@ jobs:
           username: root
           key: ${{ secrets.SSH_KEY }}        
           port: 22
-          script: systemctl restart spiget
+          script: systemctl restart spigot
