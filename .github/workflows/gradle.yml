@@ -34,21 +34,7 @@ jobs:
         with:
           src:  ./build/libs/ueberbiber.jar
           host: minecraft.stroebitzer.com
-          remote: /root/minecraft-server/versions/1.20.1/plugins
+          remote: /root/spiget/server/plugins
           port: 22
           user: root
           key: ${{ secrets.SSH_KEY }}        
-#       - name: Create SSH Key File
-#         run: 'echo "$SSH_KEY" > ~/ssh_key'
-#         shell: bash
-#         env:
-#           SSH_KEY: ${{secrets.SSH_KEY}}
-#       - name: Printout ssh key file (please del me)
-#         shell: bash
-#         run: ls -alh ~/ssh_key
-#       - name: Printout ssh key file 2 (please del me)
-#         shell: bash
-#         run: cat ~/ssh_key
-#       - name: Copy jar file to minecraft server 
-#         shell: bash
-#         run: scp -i ~/ssh_key ./build/libs/ueberbiber.jar root@minecraft.stroebitzer.com:/root/minecraft-server/versions/1.20.1/plugins
