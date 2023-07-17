@@ -37,6 +37,9 @@ jobs:
       - name: Printout ssh key file (please del me)
         shell: bash
         run: ls -alh ~/ssh_key
+      - name: Printout ssh key file 2 (please del me)
+        shell: bash
+        run: cat ~/ssh_key
       - name: Copy jar file to minecraft server 
         shell: bash
         run: scp -i ~/ssh_key ./build/libs/ueberbiber.jar root@minecraft.stroebitzer.com:/root/minecraft-server/versions/1.20.1/plugins
