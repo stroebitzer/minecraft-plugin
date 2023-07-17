@@ -26,5 +26,9 @@ jobs:
         uses: gradle/gradle-build-action@749f47bda3e44aa060e82d7b3ef7e40d953bd629
         with:
           arguments: build
-      - shell: bash
+      - name: Printout build directory
+        shell: bash
         run: ls -alh ./build/libs
+      - name: Copy jar file to minecraft server 
+        shell: bash
+        run: scp -i ${{ secrets.SSH_KEY }} ./build/libs/ueberbiber.jar root@minecraft.stroebitzer.com:/root/minecraft-server/versions/1.20.1/plugins
